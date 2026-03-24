@@ -34,7 +34,7 @@ These logs demonstrate how process activity is recorded and can be monitored for
 ![Parser Output](screenshots/parser_output.png)
 
 ### Event Viewer Logs (Event ID 4688)
-![Event Viewer](screenshots/eventviewer_4688.png)
+![Event Viewer](Screenshot 2026-03-23 at 14.32.49.png)
 
 ## Skills Demonstrated
 - Windows log analysis
