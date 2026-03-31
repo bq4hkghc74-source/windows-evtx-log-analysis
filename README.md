@@ -41,7 +41,7 @@ The focus is on identifying Event ID 4688 (Process Creation) to understand syste
 ![Raw Log Output](evtx_raw_log_output.png)
 
 ### Multiple Events Displayed
-![Multiple Events](evtx_multiple_events.png)
+![Multiple Events](evx_multiple_events.png)
 
 ### Event Filtering
 ![Event Filtering](evtx_event_filtering.png)
