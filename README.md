@@ -76,3 +76,8 @@ Event ID 4688 is critical in detecting:
 - Unauthorized system changes
 
 This project simulates how SOC analysts investigate endpoint activity using log data.
+
+---
+
+## Author
+SOC Lab Project
