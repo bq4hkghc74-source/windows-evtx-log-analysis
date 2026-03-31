@@ -1,46 +1,78 @@
-# windows-evtx-log-analysis
-# Windows EVTX Log Analysis (SOC Lab)
+# Windows EVTX Log Analysis (Event ID 4688 Detection)
 
-## Overview
-This project demonstrates how to analyze Windows Security Event Logs using Python in a Linux SOC lab environment.
+## 📌 Project Overview
+This project demonstrates how to parse and analyze Windows Security Event Logs (EVTX) using Python.  
+The focus is on identifying Event ID 4688 (Process Creation) to understand system activity and detect potential security-relevant behavior.
 
-The objective was to parse EVTX logs and identify process creation events (Event ID 4688), which are important for detecting potential malicious activity.
+---
 
-## Tools Used
-- Ubuntu Linux
+## 🎯 Objectives
+- Parse EVTX log files using Python
+- Extract and analyze security-relevant events
+- Identify process creation activity (Event ID 4688)
+- Observe system processes and execution flow
+
+---
+
+## 🛠️ Tools & Technologies
 - Python
 - python-evtx library
-- Windows Event Viewer
+- Windows Security Logs (Security.evtx)
 
-## Lab Setup
-- Windows machine used as log source
-- Ubuntu VM used as SOC analysis environment
-- EVTX logs transferred and analyzed using Python
+---
 
-## Detection Summary
-The EVTX parser was used to analyze Windows Security logs.
+## 🔍 Key Findings
+- Successfully parsed raw EVTX logs into readable XML format
+- Identified multiple Event IDs including:
+  - 4688 → Process Creation
+  - 4689 → Process Termination
+- Extracted important fields such as:
+  - Process Name (e.g., smss.exe, autochk.exe)
+  - Parent Process
+  - User SID
+  - Timestamp
+- Observed system-level processes during system startup
 
-Event ID 4688 (process creation) was successfully identified and parsed.
+---
 
-The analysis revealed multiple system-level processes such as:
-- lsass.exe
-- services.exe
+## 📸 Screenshots
 
-These logs demonstrate how process activity is recorded and can be monitored for suspicious behavior.
+### Raw EVTX Log Output
+![Raw Log Output](screenshots/evtx_raw_log_output.png)
 
-## Screenshots
+### Multiple Events Displayed
+![Multiple Events](screenshots/evtx_multiple_events.png)
 
-### EVTX Parsing Output
-![Parser Output](screenshots/parser_output.png)
+### Event Filtering
+![Event Filtering](screenshots/evtx_event_filtering.png)
 
-### Event Viewer Logs (Event ID 4688)
-![Event Viewer](Screenshot 2026-03-23 at 14.32.49.png)
+### Process Analysis
+![Process Analysis](screenshots/evtx_process_analysis.png)
 
-## Skills Demonstrated
-- Windows log analysis
-- Security event investigation
-- Python scripting for log parsing
-- Basic SOC workflow
+---
 
-## Author
-SOC Lab Project
+## 🚀 How to Run
+
+1. Install dependencies:
+pip install python-evtx
+
+2. Run the parser:
+python evtx_parser.py
+
+---
+
+## 📚 What I Learned
+- How Windows logs security events
+- Importance of Event ID 4688 in threat detection
+- Basics of log analysis for SOC environments
+- Parsing and handling structured log data in Python
+
+---
+
+## 🔐 Relevance to Cybersecurity
+Event ID 4688 is critical in detecting:
+- Suspicious process execution
+- Malware activity
+- Unauthorized system changes
+
+This project simulates how SOC analysts investigate endpoint activity using log data.
