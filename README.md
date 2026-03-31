@@ -38,16 +38,16 @@ The focus is on identifying Event ID 4688 (Process Creation) to understand syste
 ## 📸 Screenshots
 
 ### Raw EVTX Log Output
-![Raw Log Output](screenshots/evtx_raw_log_output.png)
+![Raw Log Output](evtx_raw_log_output.png)
 
 ### Multiple Events Displayed
-![Multiple Events](screenshots/evtx_multiple_events.png)
+![Multiple Events](evtx_multiple_events.png)
 
 ### Event Filtering
-![Event Filtering](screenshots/evtx_event_filtering.png)
+![Event Filtering](evtx_event_filtering.png)
 
 ### Process Analysis
-![Process Analysis](screenshots/evtx_process_analysis.png)
+![Process Analysis](evtx_process_analysis.png)
 
 ---
 
